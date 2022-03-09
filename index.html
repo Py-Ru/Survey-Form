@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="skewed-div">
+      <div class="content">
+        <h1 id="title">
+          <span class="smashout-style">SmashOut</span> Survey Form
+        </h1>
+      </div>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="flex">
+          <div class="form-group flex-item">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="user-input"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group flex-item">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="user-input"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label id="age-label" for="number"
+            >Enter Your age <span class="optional">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            class="user-input"
+            min="10"
+            max="99"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select name="role" id="dropdown" class="user-select" required>
+            <option disabled selected value>Select your current role</option>
+            <option value="student">Student</option>
+            <option value="ftjob">Full Time Job</option>
+            <option value="ftlearner">Full Time Learner</option>
+            <option value="prefernot">Prefer Not To Say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend SmashOut Inc to a friend?</p>
+          <label for="definitely">
+            <input
+              type="radio"
+              name="user-recmdn"
+              value="definitely"
+              id="definitely"
+              checked
+            />Definitely
+          </label>
+          <label for="maybe">
+            <input
+              type="radio"
+              name="user-recmdn"
+              value="maybe"
+              id="maybe"
+            />Maybe
+          </label>
+          <label for="not-sure">
+            <input
+              type="radio"
+              name="user-recmdn"
+              value="not-sure"
+              id="not-sure"
+            />Not Sure
+          </label>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite feature of SmashOut Inc?</p>
+          <select name="favorite" id="favorite" class="user-select" required>
+            <option disabled selected value>Select your current role</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span>(Check all that apply)</span>
+          </p>
+          <label for="front-end-prj">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="front-end-projects"
+              id="front-end-prj"
+            />Front-end Projects
+          </label>
+          <label for="back-end-prj">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="back-end-projects"
+              id="back-end-prj"
+            />Back-end Projects
+          </label>
+          <label for="data-vislzn">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="data-visualization"
+              id="data-vislzn"
+            />Data Visualization
+          </label>
+          <label for="preferred-chal">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="challenges"
+              id="preferred-chal"
+            />Challenges
+          </label>
+          <label for="open-source-com">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="open-source-community"
+              id="open-source-com"
+            />Open Source Community
+          </label>
+          <label for="gitter">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="gitter-help-rooms"
+              id="gitter"
+            />Gitter Help Rooms
+          </label>
+          <label for="videos">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="videos"
+              id="videos"
+            />Videos
+          </label>
+          <label for="city-meetups">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="city-meetups"
+              id="city-meetups"
+            />City Meetups
+          </label>
+          <label for="wiki">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="wiki"
+              id="wiki"
+            />Wiki
+          </label>
+          <label for="forum">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="forum"
+              id="forum"
+            />Forum
+          </label>
+          <label for="add-courses">
+            <input
+              type="checkbox"
+              name="user-opinion"
+              value="additional-courses"
+              id="add-courses"
+            />Additional Courses
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer class="skewed-footer">
+      <div class="footer-content">
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

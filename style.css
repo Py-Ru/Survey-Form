@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(45deg, pink, magenta);
+}
+
+.content {
+  padding: 20px 5px 0 5px;
+  text-align: center;
+}
+
+.content h1 {
+  padding-top: 50px;
+  font-size: 32px;
+  font-family: pacifico, cursive;
+  color: white;
+  line-height: 20px;
+}
+
+.content span {
+  font-family: monospace;
+}
+
+.content .smashout-style {
+  display: block;
+}
+
+.content .white-text {
+  color: white;
+}
+
+main {
+  /* width: 100%; */
+  margin-top: 40px;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+}
+
+.form-group {
+  padding: 10px;
+  color: #222;
+}
+
+label {
+  display: block;
+  margin: 5px 0 10px 0;
+  padding: 5px;
+  font-family: "josefin sans", "san serif";
+  font-weight: 900;
+}
+
+#email-label,
+#name-label,
+#age-label {
+  font-size: large;
+}
+.user-input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-input:active,
+.user-input:focus {
+  border: 1px solid skyblue;
+  outline: none;
+}
+
+.user-input:invalid {
+  border: 1px solid lightcoral;
+}
+
+#number {
+  width: 43%;
+}
+
+.optional {
+  font-size: small;
+}
+
+.user-select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-select:active,
+.user-select:focus {
+  outline: none;
+  border: 1px solid skyblue;
+}
+
+.user-select option {
+  padding: 10px;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: bolder;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 5px 0 0;
+}
+
+p {
+  font-family: "josefin sans", sans-serif;
+  font-weight: 900;
+  margin: 5px 0 10px 0;
+}
+
+textarea {
+  width: 90%;
+  height: 200px;
+  resize: none;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea:active,
+textarea:focus {
+  border: 1px solid skyblue;
+}
+
+button {
+  padding: 10px;
+  width: 90%;
+  background: magenta;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  margin-top: 50px;
+  background: magenta;
+}
+
+#description {
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .content h1 {
+    padding-top: 50px;
+    font-size: 64px;
+    font-family: pacifico, cursive;
+    color: white;
+    line-height: 43px;
+  }
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-evenly; */
+  }
+
+  .flex-item {
+    width: 100%;
+  }
+
+  #name,
+  #email {
+    /* width: 45%; */
+  }
+  button {
+    width: 90%;
+    height: 50px;
+  }
+}
